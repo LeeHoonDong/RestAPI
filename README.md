@@ -5,6 +5,5 @@
 <img width="805" alt="image" src="https://github.com/LeeHoonDong/RestAPI/assets/51987233/1174d4ff-90ef-42c0-89a6-6a4aa16fca4b"><br>
 <img width="799" alt="image" src="https://github.com/LeeHoonDong/RestAPI/assets/51987233/71ae45d3-ca1b-485b-838f-275135cdc9c0"><br>
 #### + 각 메소드에 맞는 상태코드 반환과 더불어, POST Method로 추가 시 어떤 리소스가 추가되었는지 알 수 있게 Header에 추가해서 반환 예정
-<img width="799" alt="image" src="https://github.com/LeeHoonDong/RestAPI/assets/51987233/268d74e7-41b1-4f0f-8224-156692edc90f"><br>
-<img width="799" alt="image" src="https://github.com/LeeHoonDong/RestAPI/assets/51987233/099fde9f-00b6-4dea-813e-e50a04af84ca"><br>
-## 서버로부터 요청 결과값에 적절한 상태코드를 반환하는 것이 좋은 Rest API 설계방법!!!
+<img width="811" alt="image" src="https://github.com/LeeHoonDong/RestAPI/assets/51987233/8b948215-9848-433d-bdb7-b65533bfdaf4"><br>
+### 서버로부터 요청 결과값에 적절한 상태코드를 반환하는 것이 좋은 Rest API 설계방법!!!
