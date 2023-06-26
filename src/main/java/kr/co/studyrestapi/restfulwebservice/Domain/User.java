@@ -1,4 +1,4 @@
-package kr.co.studyrestapi.restfulwebservice.User;
+package kr.co.studyrestapi.restfulwebservice.Domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
