@@ -1,6 +1,6 @@
 # RestAPI
 
-## ExceptionHandling
+## ExceptionHandling Part1.
 #### ASIS: "/users/100" 즉, 없는 100번 유저 조회 시 '200OK'와 함께 정상 조회
 ![img.png](img.png)
 #### TOBE: 없는 유저 조회 시 , 에러 코드와 함께 "없는 유저입니다." 라는 메시지 출력 필요.
