@@ -1,5 +1,4 @@
 # RestAPI
-
 ## Status Code 제어
 #### Status Code 200은 서버가 정상적으로 처리했다는 의미. 하지만, GET Method와 POST Method는 용도가 다르기 때문에, 가능하면 Status Code도 구분해서 사용하면 좋음
 <img width="805" alt="image" src="https://github.com/LeeHoonDong/RestAPI/assets/51987233/1174d4ff-90ef-42c0-89a6-6a4aa16fca4b"><br>
@@ -15,3 +14,10 @@
 ![img_1.png](img_1.png)
 #### PROBLEM: 에러 발생메시지를 그대로 출력하여 예외발생의 원인이 되는 부분을 그대로 노출하기 때문에 보안상의 허점 노출.
 ####        따라서, 이를 가공하여 Client에 보낼 필요가 있다.
+
+## ExceptionHandling Part2.
+#### ASIS: 예외발생의 원인이 되는 부분 그대로 노출.
+#### TOBE: 다른 적절한 상태로 프로그램을 개선.
+##### -> 사용자가 없는것은 리소스가 존재하지 않는 것이기 때문에 404 NOT FOUND 반환 예정.
+![img_2.png](img_2.png)
+![img_3.png](img_3.png)
