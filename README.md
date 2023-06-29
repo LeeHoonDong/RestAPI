@@ -14,3 +14,7 @@
 ###### 2. 모든 @Controller에 대해 전역적으로 발생할 수 있는 예외를 잡아줌 → 속성 설정을 통해 원하는 Controller나 Package 선택 가능.
 ###### 3. @Component가 선언되어 있어 Bean으로 관리됨.
 ##### @ExceptionHandler: @Controller가 적용된 Bean에서 발생하는 예외를 잡아 하나의 메서드에서 처리하는 기능 수행.
+## AOP ExceptionHandling Part2.
+### ASIS: 모든 예외들을 처리함 -> TOBE: 사용자가 존재하지 않았을때, 그에 맞는 예외메시지를 출력하기를 원함.
+![img_6.png](img_6.png)
+![img_7.png](img_7.png)
