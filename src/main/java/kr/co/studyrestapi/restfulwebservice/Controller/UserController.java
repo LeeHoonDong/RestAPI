@@ -31,4 +31,12 @@ public class UserController {
     public User saveUser(@RequestBody User user){
         return userDaoService.createUser(user);
     }
+
+    @DeleteMapping("/users/{id}")
+    public void deleteUser(@PathVariable int id){
+        User deleteUser = userDaoService.deleteUserById(id);
+        if(deleteUser==null) {
+            throw new UserNotFoundException(String.format(String.format("[%s]는없는 사용자입니다.", id)));
+        }
+    }
 }
