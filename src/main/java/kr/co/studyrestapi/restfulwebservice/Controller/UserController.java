@@ -1,11 +1,15 @@
 package kr.co.studyrestapi.restfulwebservice.Controller;
 
+import jakarta.validation.Valid;
 import kr.co.studyrestapi.restfulwebservice.Domain.User;
 import kr.co.studyrestapi.restfulwebservice.Exception.UserNotFoundException;
 import kr.co.studyrestapi.restfulwebservice.Repository.UserDaoService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import java.net.URI;
 import java.util.List;
 
 @RestController
@@ -28,8 +32,10 @@ public class UserController {
         return userDaoService.findUser(id);
     }
     @PostMapping("/users")
-    public User saveUser(@RequestBody User user){
-        return userDaoService.createUser(user);
+    public ResponseEntity<User> saveUser(@Valid @RequestBody User user){
+        User savedUser=userDaoService.createUser(user);
+        URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(savedUser.getId()).toUri();
+        return ResponseEntity.created(location).build();
     }
 
     @DeleteMapping("/users/{id}")
